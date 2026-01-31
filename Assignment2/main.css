@@ -1,0 +1,288 @@
+/*
+ * Main Stylesheet - SportsPro Technical Support
+ * Student: Samar Khajuria, ID: T00714740
+ */
+
+html {
+    background-color: #BFCFFE;
+}
+
+body {
+    margin-top: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 760px;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid #001963;
+}
+
+header {
+    margin: 0;
+    border-bottom: 2px solid black;
+    padding: .5em 2em;
+}
+header h1 {
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+header p {
+    margin: 0;
+    padding: .25em 0 0 0;
+}
+header ul {
+    margin: 0;
+    padding: 1em 0 0 0;
+}
+
+main {
+    margin: 0;
+    padding: .5em 2em .25em;
+}
+footer {
+    clear: both;
+    margin-top: 1em;
+    padding-right: 1em;
+    border-top: 2px solid black;
+}
+footer p {
+    text-align: right;
+    font-size: 80%;
+    margin: 1em 0;
+}
+
+h1 {
+    font-size: 150%;
+    margin: 0;
+    padding: .5em 0 .25em;
+}
+h2 {
+    font-size: 120%;
+    margin: 0;
+    padding: .25em 0 .25em;
+}
+h1, h2 {
+    color: black;
+}
+p {
+    margin: .5em 0 .5em 0;
+    padding: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+li {
+    margin: 0;
+    padding: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+nav ul li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: #3333CC;
+    font-weight: bold;
+}
+a:hover {
+    color: #3333CC;
+}
+
+.home-button {
+    background-color: #3333CC;
+    color: white !important;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.home-button:hover {
+    background-color: #001963 !important;
+    color: white !important;
+}
+
+table {
+    border: 1px solid #001963;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 1em;
+}
+th {
+    background-color: #E6E6FA;
+    border: 1px dashed #001963;
+    padding: .4em .5em;
+    text-align: left;
+    font-weight: bold;
+}
+td {
+    border: 1px dashed #001963;
+    padding: .3em .5em;
+    text-align: left;
+}
+#no_border {
+    border: 0px;
+}
+#no_border td {
+    border: 0px;
+}
+
+button {
+    background-color: #3333CC;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+}
+button:hover {
+    background-color: #001963;
+}
+button[type="submit"] {
+    margin-top: 0.5em;
+}
+
+form {
+    margin: 0;
+}
+br {
+    clear: left;
+}
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80%;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+input[type="number"],
+select,
+textarea {
+    border: 1px solid #ccc;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+select:focus,
+textarea:focus {
+    border-color: #3333CC;
+    outline: none;
+}
+
+.right {
+    text-align: right;
+}
+.error {
+    color: red;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: #FFE6E6;
+    border: 1px solid red;
+    border-radius: 3px;
+    margin: 0.5em 0;
+}
+.message {
+    color: green;
+    font-weight: bold;
+    padding: 0.5em;
+    background-color: #E6F7E6;
+    border: 1px solid green;
+    border-radius: 3px;
+    margin: 0.5em 0;
+}
+
+#aligned {
+    margin: .5em 0 2em;
+}
+#aligned label {
+    width: 8em;
+    margin-top: .2em;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    float: left;
+}
+#aligned input {
+    float: left;
+}
+#aligned input[text] {
+    width: 15em;
+}
+#aligned .message {
+    margin-left: .5em;
+    width: 15em;
+}
+
+/* Custom confirmation dialog overlay */
+.confirm-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm-dialog {
+    background-color: white;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    max-width: 400px;
+    text-align: center;
+}
+
+.confirm-dialog h3 {
+    margin: 0 0 1em 0;
+    color: #333;
+}
+
+.confirm-dialog p {
+    margin: 0 0 1.5em 0;
+    color: #666;
+}
+
+.confirm-buttons {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+}
+
+.confirm-buttons button {
+    padding: 8px 20px;
+    font-size: 14px;
+}
+
+.confirm-buttons .confirm-yes {
+    background-color: #d32f2f;
+}
+.confirm-buttons .confirm-yes:hover {
+    background-color: #b71c1c;
+}
+
+.confirm-buttons .confirm-no {
+    background-color: #666;
+}
+.confirm-buttons .confirm-no:hover {
+    background-color: #444;
+}
